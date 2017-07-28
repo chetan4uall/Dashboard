@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-xs-8">
+    <app-environment-item
+       *ngFor="let env of environments; let i=index"
+       [environment]="env"
+       [index]="i">
+       </app-environment-item>
+  </div>
+</div>

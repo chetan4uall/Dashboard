@@ -1,0 +1,29 @@
+<!--<div *ngFor="let app of application">
+<div class="row">
+  <div class="col-xs-12">
+     <h1>{{app.applicationName}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{app.appVersion}}</h1>
+  </div>
+</div>
+<div>-->
+
+<table class="table table-bordered" style ="width:60%"  cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Application Name</th>
+                                    <th>Application Version</th>
+                                    <th>Installed On</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let app of application">
+                                   <td>{{app.applicationName}}</td>
+                                   <td>{{app.appVersion}}</td>
+                                   <td>{{app.installedOn}}</td>
+                                </tr>
+                            </tbody>
+ </table>
